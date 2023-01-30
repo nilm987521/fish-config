@@ -1,7 +1,5 @@
-set -gx OMF_PATH "$HOME/.config/fish/omf"
-source $OMF_PATH/init.fish
-
 # Only execute this file once per shell.
+set -g OMF_CONFIG $HOME/.config/fish/omf
 set -q __fish_home_manager_config_sourced; and exit
 set -g __fish_home_manager_config_sourced 1
 set -e fish_function_path[1]
